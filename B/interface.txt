@@ -1,0 +1,38 @@
+interface
+1.
+package day9inter;
+
+public interface Ex1 
+{
+int a=10;    //variable is static/constant/final in nature by default
+void m1();
+void m2();   
+//non static methods are mandatory incomplete
+static void m3()      //in interface we can write static method complete
+{
+	System.out.println(a);
+}
+}
+
+
+
+2.
+package day9inter;
+
+public class Ex2 implements Ex1
+{
+public void m1()
+{
+	System.out.println(Ex1.a);     //a is element of class 1 so reference of class 1 is given
+}
+public void m2()
+{
+	System.out.println("completed ");
+}
+public static void main(String[] args) 
+{
+	Ex2 obj=new Ex2();
+	obj.m1();
+	obj.m2();
+}
+}

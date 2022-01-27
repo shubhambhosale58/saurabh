@@ -1,0 +1,68 @@
+abstract method
+1
+package day7;
+
+public abstract class Ex1 
+{
+	public void SBI()
+	{
+		System.out.println("state bank of india");
+	}
+	public abstract void HDFC();
+	public abstract void Canara();
+
+}
+
+
+2.
+
+package day7;
+
+public class Ex2 extends Ex1
+{
+	public void HDFC()
+	{
+		System.out.println("home loan");
+	}
+	public  void Canara()
+	{
+	System.out.println("car loan");	
+	}
+	public static void main(String[] args) 
+	{
+	Ex2 obj=new Ex2();
+	obj.SBI();
+	obj.HDFC();
+	obj.Canara();
+	}
+}
+
+
+3.
+package day7;
+
+public class Ex3 extends Ex1
+{
+public void kotak()
+{
+	System.out.println("kotak bank");
+}
+public void HDFC()
+{
+	System.out.println("hii");
+}
+public void Canara()
+{
+	System.out.println("car loan");
+}
+public static void main(String[] args) 
+{
+Ex3 obj=new	Ex3();
+obj.Canara();
+obj.HDFC();
+obj.kotak();
+obj.SBI();
+}
+
+
+}

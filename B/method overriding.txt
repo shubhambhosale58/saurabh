@@ -1,0 +1,44 @@
+//method overriding
+
+
+1.
+package polymorphism;
+
+public class Ex3
+{
+public void father()
+{
+	 System.out.println("i'm head of the family");
+}
+public void mother()
+{
+	System.out.println("i'm housemaker");
+}
+
+}
+
+
+
+2.
+package polymorphism;
+
+public class Ex4 extends Ex3
+{
+public void father()
+{
+	System.out.println("i'm a businessman");
+}
+public void call()
+{
+	super.father();
+	// this.father();
+}
+public static void main(String[] args)
+{
+	Ex4 obj= new Ex4();
+	obj.father();
+	obj.mother();
+	obj.call();
+	// obj.call();
+}
+}

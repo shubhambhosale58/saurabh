@@ -1,0 +1,100 @@
+*upcasting*
+1.
+package upcasting;    //is the type of non primitive casting
+                      //upcasting is the process of assigning subclass property into superclass
+                       //before upcasting we need to perform inheritance
+
+public class Upcast1
+{
+public void m1()
+{
+System.out.println("car");	
+}
+public void m2()
+{
+	System.out.println("mobile");
+}
+}
+
+
+
+2.
+package upcasting;
+
+public class Child1 extends Upcast1
+{
+public void m1()
+{
+	System.out.println("home");
+}
+public void m2()
+{
+	System.out.println("suzuki");
+}
+public void m3()
+{
+	System.out.println("2bhk");
+}
+	
+
+}
+
+
+
+3.
+package upcasting;
+
+public class Upcasting
+{
+public static void main(String[] args)
+{
+	Upcast1 obj=new Child1();  //syntax for upcasting:(superclass variable=new subclass())
+	obj.m1();
+	obj.m2();
+}
+}
+
+
+
+
+*upcasting using interface*
+1.
+package upcasting;
+
+public interface Ex1 
+{
+void m1();
+void m2();
+}
+
+
+2.
+
+package upcasting;
+
+public class Ex2 implements Ex1
+{
+public void m1()
+{
+	System.out.println("hello");
+}
+public void m2()
+{
+	System.out.println("alien");
+}
+}
+
+
+3.
+package upcasting;
+
+public class Upcasting1 
+{
+public static void main(String[] args)
+{
+	Ex1 e=new Ex2();
+	e.m1();
+	e.m2();
+	
+}
+}

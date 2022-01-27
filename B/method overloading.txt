@@ -1,0 +1,32 @@
+//method overloading
+
+1.
+package polymorphism;
+
+public class Ex1
+{
+public void Addition(int a,int b)
+{
+	int sum=a+b;
+	System.out.println(sum);
+}
+public void addition(int a,int b,int c)
+{
+	int sum=a+b+c;
+	System.out.println(sum);
+}
+}
+
+
+2.
+package polymorphism;
+
+public class Ex2 
+{
+public static void main(String[] args) 
+{
+	Ex1 x1=new Ex1();
+	x1.Addition(12, 13);
+	x1.addition(14, 15, 16 );
+}
+}
